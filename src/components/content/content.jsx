@@ -14,30 +14,32 @@ function Content() {
     >
       <ul className="flex justify-between ">
         <li className=" w-[500px]">
-          <div className={` text-[48px]  font-bold w[500px]`}>
-            Yorqin kelajakni yaratadigan kursingizni toping
-          </div>
-
-          <p className="my-5">
-            Surxondaryo viloyatidagi Angor tumanida Recor IT Academiyasi
-            2023-yil tashkil etilgan.Bu mazkazda siz ITdan malakali ustozlar
-            yordamida bilim olishingiz mumkin.Bu o’quv markaz o’qitish bilan
-            birga IT bo’yicha ishlarni ham qabul qiladi
-          </p>
-          <h6 className="text-[20px]">
-            Recor IT Academiyasi Xalqaro komponiyalar bilan shartnoma qilgan
-          </h6>
           <motion.div
             variants={fadeIn("left", 1)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.1 }}
+            className={` text-[48px]  font-bold w[500px]`}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            quidem sit ex! Nesciunt voluptas cupiditate quibusdam voluptatum.
-            Expedita, sequi. Vel, eos non accusamus corporis commodi cum
-            officiis libero! Tenetur, enim!
+            Yorqin kelajakni yaratadigan kursingizni toping
           </motion.div>
+          <motion.div
+            variants={fadeIn("right", 1)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.1 }}
+            className="my-5"
+          >
+            Surxondaryo viloyatidagi Angor tumanida Recor IT Academiyasi
+            2023-yil tashkil etilgan.Bu mazkazda siz ITdan malakali ustozlar
+            yordamida bilim olishingiz mumkin.Bu o’quv markaz o’qitish bilan
+            birga IT bo’yicha ishlarni ham qabul qiladi
+          </motion.div>
+
+          <h6 className="text-[20px]">
+            Recor IT Academiyasi Xalqaro komponiyalar bilan shartnoma qilgan
+          </h6>
+
           <button className=" px-8 mt-5 text-white py-2 bg-blue-600 hover:scale-95 rounded ">
             Batafsil
           </button>
