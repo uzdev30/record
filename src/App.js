@@ -9,15 +9,15 @@ import Wrapp from "./components/wrapp/wrapp";
 
 function App() {
   return (
-    <DarkModeFn>
-      <div className={`container mx-auto max-[376px]:px-[15px]  `}>
+    <div className={`container mx-auto max-[376px]:px-[15px]  `}>
+      <DarkModeFn>
         <Head />
         <Wrapp />
         <Content />
         <Sidebar />
         <Footer />
-      </div>
-    </DarkModeFn>
+      </DarkModeFn>
+    </div>
   );
 }
 
